@@ -18,14 +18,6 @@ def divide(a,b):
 def quotient(a,b):
     return a%b
 
-functions = {
-    'add': add,
-    'subtract': subtract,
-    'multiply': multiply,
-    'divide': divide,
-    'quotient': quotient
-}
-
 class MathClass(object):
     def add(self, a, b):
         return a+b
@@ -45,6 +37,14 @@ class MathClass(object):
 # notice the lack of "new"
 math_class = MathClass()
 
+functions = {
+    'add': add,
+    'subtract': subtract,
+    'multiply': multiply,
+    'divide': divide,
+    'quotient': quotient
+}
+
 methods = {
     'add': math_class.add,
     'subtract': math_class.subtract,
@@ -55,7 +55,12 @@ methods = {
 
 if __name__ == "__main__":
     try: 
+        print sys.argv
         if len(sys.argv) == 4:
+            print "I want to ", sys.argv[1]
+            print "function: ", functions['add']
+            print "method: ", methods['add']
+            print "Function is: ", functions[sys.argv[1]]
             print "Function gives: ", functions[sys.argv[1]](int(sys.argv[2]), int(sys.argv[3]))
             print "Class method gives: ", methods[sys.argv[1]](int(sys.argv[2]), int(sys.argv[3]))
         else:

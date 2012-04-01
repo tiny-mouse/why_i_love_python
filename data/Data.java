@@ -25,6 +25,8 @@ public class Data {
     	// You can also say Object, Object, but that is far less elegant
     	// java-ers may want to hurt you if you do this
     	Map<Object, Object> objectDict = new HashMap<Object, Object>();
+    	//objectDict.put("anumber", new Integer(1));
+    	//Integer anInt = (String)objectDict.get("anumber");
     	objectDict.put("dict", dict);
     	objectDict.put(dict, objectDict);
     	

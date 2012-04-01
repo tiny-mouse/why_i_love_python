@@ -16,6 +16,7 @@ public class AnotherClass extends AClass {
      */
     public static void main(String[] args) {
         AnotherClass aClass = new AnotherClass();
+        aClass.someMethod();
         aClass.someOtherMethod();
     }
 }

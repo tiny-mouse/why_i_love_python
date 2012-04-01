@@ -13,7 +13,7 @@ public class Functions {
             if (args[0].equals("add") && args.length == 3) {
                 System.out.println(Functions.add(Integer.parseInt(args[1]), Integer.parseInt(args[2])));
             }
-            } catch (IllegalArgumentException e) {
+        } catch (IllegalArgumentException e) {
             System.out.println("One of your args is not an int.  usage: operation, number 1, number 2");
         }
     }

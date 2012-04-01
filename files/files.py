@@ -5,6 +5,7 @@ def read_this_file():
 def read_this_file_line_by_line():
     with open("files.py") as the_file:
         for line in the_file.readlines():
+            print "Next line:"
             print line
 
 def write_a_new_file():
@@ -14,6 +15,6 @@ def write_a_new_file():
 
 
 if __name__ == "__main__":
-    read_this_file()
-    read_this_file_line_by_line()
+    #read_this_file()
+    #read_this_file_line_by_line()
     write_a_new_file()

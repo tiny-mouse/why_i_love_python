@@ -27,6 +27,9 @@ def for_loop():
     print "FOR STATEMENT"
     for i in range(10):
         print "for loop iteration: %s" % i
+    for index, value in enumerate(range(10, 20, 3)):
+        print "for loop iteration: %s with value: %s" % (index, value)
+
 
 def list_iterator():
     print 
@@ -49,6 +52,7 @@ def for_dict_loop():
     print "\nfor dict loop using iteritems"
     for key, value in dicta.iteritems():
         print "key: {0} has value: {1}".format(key, value)
+
 
 
 if __name__ == "__main__":

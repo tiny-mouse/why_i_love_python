@@ -1,21 +1,21 @@
 thing = "that"
 
-print "before the method: "+thing
+print "before the function: "+thing
 
-def a_method():
+def a_function():
     thing = "this"
-    print "in the method: "+thing
+    print "in the function: "+thing
 
-a_method()
+a_function()
 
-print "after the method: "+thing
+print "after the function: "+thing
 
-def another_method():
+def another_function():
     global thing
     thing = "another thing"
-    print "in the other method: "+thing
+    print "in the other function: "+thing
 
-another_method()
+another_function()
 
-print "after the other method: "+thing
+print "after the other function: "+thing
 
