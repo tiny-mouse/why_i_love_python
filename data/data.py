@@ -16,6 +16,7 @@ data_types = {
     "double": 1.0,
     
     "int": 10,
+    # Notice the items in the list are not of the same type
     "list": [a_tuple, 1.0, "a string"],
     "boolean": False,
     None: "whatever",
