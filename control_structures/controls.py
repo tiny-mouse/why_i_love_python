@@ -1,5 +1,7 @@
 import random
 
+# Notice the two types of printing in this method.
+# the % is the old style and the {0} format is the new style.
 def if_statement():
     print "IF STATEMENT"
     num = random.choice(range(10))
@@ -47,8 +49,6 @@ def for_dict_loop():
     print "\nfor dict loop using iteritems"
     for key, value in dicta.iteritems():
         print "key: {0} has value: {1}".format(key, value)
-
-
 
 
 if __name__ == "__main__":

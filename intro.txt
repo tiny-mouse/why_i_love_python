@@ -1,0 +1,9 @@
+Statically VS. Dynamically Typed:
+
+Java -> Static
+ - Whatever you declare to be the type is what it is for the rest of this object's life.
+ - Compile-time checking for type matching.
+
+Python -> Dynamic
+ - You are only really assigning an object that has a type to a variable.  
+ - Said object has a type, but the variable doesn't
