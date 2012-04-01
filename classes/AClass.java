@@ -1,3 +1,6 @@
+/**
+ * Notice this class does not have a main method.
+ */
 public class AClass {
 
     protected String attribute = "some attribute";
